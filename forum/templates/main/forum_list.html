@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h2>Forums</h2>
+{% for forum in forum_list %}
+    <div class="forum">
+        <h4>Name: {{forum.name}}</h4>
+        <p>Description: {{forum.description}}</p>
+    </div>
+{% endfor %}
+{% endblock %}

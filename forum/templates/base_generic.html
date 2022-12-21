@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <h1>My library</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="forums">Forums</a></li>
+            <li><a href="threads">Threads</a></li>
+            <li><a href="posts">Posts</a></li>
+            <li><a href="users">Users</a></li>
+            <li><a href="subscriptions">Subscriptions</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

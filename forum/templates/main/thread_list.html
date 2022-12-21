@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h2>Threads</h2>
+{% for thread in thread_list %}
+    <div class="thread">
+        <h4>Forum: {{thread.forum}}</h4>
+        <p>Title: {{thread.title}}</p>
+        
+    </div>
+{% endfor %}
+{% endblock %}
